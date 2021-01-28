@@ -1,0 +1,2 @@
+https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=D1C4E9&secondary.color=9CCC65&primary.text.color=000000
+https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=311B92&secondary.color=D32F2F
