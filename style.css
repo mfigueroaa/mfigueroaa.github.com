@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces&family=Lato&display=swap");
 
+/* Base */
 body {
   font-family: "Lato", sans-serif;
 }
@@ -11,4 +12,30 @@ h4,
 h5,
 h6 {
   font-family: "Fraunces", serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Componentes */
+.nav {
+  /* background-color: blue; */
+  max-width: 90vw;
+  margin: 0 auto;
+}
+.nav ul {
+  background-color: greenyellow;
+  display: flex;
+  justify-content: space-between;
+}
+.nav ul li {
+  /* background-color: green; */
+}
+.nav ul li a {
+  /* background-color: red; */
 }
