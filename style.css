@@ -1,5 +1,132 @@
+/* Tipografía */
+
+/*
+  Tu tipografia va aqui
+*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces&family=Lato&display=swap");
+/* Variables */
+:root {
+  --primario: #38e925;
+  --primario-claro: #a2f598;
+  --primario-fuerte: #279e19;
+  --secundario: #161917;
+  --secundario-claro: #b2b3b2;
+  --secundario-fuerte: #000000;
+  --bg: #ffffff;
+  --font-base: "Lato", sans-serif;
+  --font-headings: "Fraunces", serif;
+  --h1: 121px;
+  --h2: 81px;
+  --h3: 54px;
+  --h4: 27px;
+  --h5: 18px;
+  --h6: 16px;
+}
+
+/* Base */
+
+/*
+  Elementos base van aqui
+*/
+
+body {
+  font-family: var(--font-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headings);
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+h6 {
+  font-size: var(--h6);
+}
+
+/* Componentes */
+
+/*
+  Componentes van aqui
+*/
+
+/* Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-items: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  place-content: center;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.outline {
+  outline: 1px solid black;
+}
 
 /* Base */
 body {
@@ -24,18 +151,42 @@ a {
 
 /* Componentes */
 .nav {
-  /* background-color: blue; */
-  max-width: 90vw;
-  margin: 0 auto;
+ background-color: lavender;
+  max-width: 100vw;
+  position: relative;
+  outline: 1px solid black
 }
 .nav ul {
-  background-color: greenyellow;
+  font-family: var(--font-headings);
+  font-size: var(--h5);
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 350px;
+  height: 50px;
+  outline: 1px solid black
 }
 .nav ul li {
   /* background-color: green; */
 }
 .nav ul li a {
   /* background-color: red; */
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  left: 0;
+  absolute;
+  outline: 1px solid black
+}
+.nombre{
+  font-family: var(--font-headings);
+  font-size: var(--h4);
+  writing-mode: vertical-lr;
+  padding-top: 20px;
+  padding-left: 5px;
+  width: 50px;
+  height:100vw;
+  display: block;
+  outline: 1px solid black
 }
