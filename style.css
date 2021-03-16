@@ -160,10 +160,11 @@ a {
   font-family: var(--font-headings);
   font-size: var(--h5);
   display: flex;
+  margin: 0px;
   align-items: center;
   justify-content: center;
   gap: 350px;
-  height: 50px;
+  height: 70px;
   outline: 1px solid black
 }
 .nav ul li {
@@ -173,8 +174,8 @@ a {
   /* background-color: red; */
 }
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   left: 0;
   absolute;
   outline: 1px solid black
@@ -184,9 +185,25 @@ a {
   font-size: var(--h4);
   writing-mode: vertical-lr;
   padding-top: 20px;
-  padding-left: 5px;
-  width: 50px;
-  height:100vw;
+  padding-left: 15px;
+  width: 70px;
+  height:100vh;
   display: block;
   outline: 1px solid black
 }
+
+.grid{
+  display: grid;
+  outline: 1px solid black
+  width: 100vw;;
+  height:100vh;
+}
+
+.prueba{
+  outline: 1px solid black
+  width: 70px;
+  height: 70px;
+  left: 0;
+  absolute;
+}
+
