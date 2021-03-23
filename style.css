@@ -1,19 +1,15 @@
 /* Tipografía */
-
-/*
-  Tu tipografia va aqui
-*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces&family=Lato&display=swap");
 /* Variables */
 :root {
-  --primario: #38e925;
-  --primario-claro: #a2f598;
-  --primario-fuerte: #279e19;
-  --secundario: #161917;
+  --primario: #e6e6fa;
+  --primario-claro: #ffffff;
+  --primario-fuerte: #ccccf5;
+  --secundario: #000000;
   --secundario-claro: #b2b3b2;
   --secundario-fuerte: #000000;
-  --bg: #ffffff;
+  --bg: #e6e6fa;
   --font-base: "Lato", sans-serif;
   --font-headings: "Fraunces", serif;
   --h1: 121px;
@@ -85,6 +81,7 @@ h6 {
 
 .grid {
   display: grid;
+  width: 100vw;
 }
 
 .grid-center {
@@ -151,59 +148,135 @@ a {
 
 /* Componentes */
 .nav {
- background-color: lavender;
+  background-color: #e6e6fa;
   max-width: 100vw;
   position: relative;
-  outline: 1px solid black
+  outline: 1px solid black;
 }
+
+.logo {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  left: 0;
+  display: absolute;
+  outline: 1px solid black;
+}
+
 .nav ul {
+  position: fixed;
   font-family: var(--font-headings);
   font-size: var(--h5);
   display: flex;
   margin: 0px;
+  margin-left: 70px;
+  margin-right: 0px;
   align-items: center;
   justify-content: center;
   gap: 350px;
+  width: 100vw;
   height: 70px;
-  outline: 1px solid black
+  background-color: lavender;
+  outline: 1px solid black;
 }
-.nav ul li {
-  /* background-color: green; */
+
+.nav a {
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 15px;
 }
-.nav ul li a {
-  /* background-color: red; */
+
+.nav ul li a:hover {
+  outline: 1px solid black;
+  height: 200%;
+  width: 200%;
+  border-radius: 200%;
+  opacity: 0.5;
+  background-color: black;
 }
-.logo {
-  width: 70px;
-  height: 70px;
-  left: 0;
-  absolute;
-  outline: 1px solid black
-}
-.nombre{
+
+.nombre {
+  position: fixed;
   font-family: var(--font-headings);
   font-size: var(--h4);
   writing-mode: vertical-lr;
-  padding-top: 20px;
+  transform: rotate(-180);
+  padding-top: 340px;
   padding-left: 15px;
   width: 70px;
-  height:100vh;
+  height: 100vh;
+  margin-top: 70px;
   display: block;
-  outline: 1px solid black
+  background-color: lavender;
+  outline: 1px solid black;
 }
 
-.grid{
+.intro {
+  color: #38e925;
+  font-family: var(--font-headings);
+  font-size: var(--h4);
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 25%;
+  padding-left: 60%;
+}
+
+.grid {
   display: grid;
-  outline: 1px solid black
-  width: 100vw;;
-  height:100vh;
+  /* grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr; */
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
 }
 
-.prueba{
-  outline: 1px solid black
-  width: 70px;
-  height: 70px;
-  left: 0;
-  absolute;
+.proyectos div:nth-child(1) {
+  background-color: lightcoral;
+  width: 400px;
+  height: 500px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
-
+.proyectos div:nth-child(2) {
+  background-color: lightgrey;
+  width: 400px;
+  height: 400px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.proyectos div:nth-child(3) {
+  background-color: lightsalmon;
+  width: 400px;
+  height: 300px;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.proyectos div:nth-child(4) {
+  background-color: lightslategray;
+  width: 400px;
+  height: 600px;
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+.proyectos div:nth-child(5) {
+  background-color: lightgoldenrodyellow;
+  width: 240px;
+  height: 300px;
+  grid-column: 1 / 2;
+  grid-row: 2/ 3;
+}
+.proyectos div:nth-child(6) {
+  background-color: lightseagreen;
+  width: 600px;
+  height: 400px;
+  grid-column: 2/ 3;
+  grid-row: 2/ 4;
+}
+.proyectos div:nth-child(7) {
+  background-color: lightpink;
+  width: 900px;
+  height: 600px;
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+}
