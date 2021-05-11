@@ -1,8 +1,4 @@
 /* Tipografía */
-
-/*
-  Tu tipografia va aqui
-*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces&family=Lato&display=swap");
 /* Variables */
@@ -25,11 +21,6 @@
 }
 
 /* Base */
-
-/*
-  Elementos base van aqui
-*/
-
 body {
   font-family: var(--font-base);
 }
@@ -65,81 +56,6 @@ h5 {
 
 h6 {
   font-size: var(--h6);
-}
-
-/* Componentes */
-
-/*
-  Componentes van aqui
-*/
-
-/* Utilities */
-.flex {
-  display: flex;
-}
-
-.flex-center {
-  justify-items: center;
-  align-items: center;
-}
-
-.grid {
-  display: grid;
-  width: 100vw;
-}
-
-.grid-center {
-  place-content: center;
-}
-
-.mx-auto {
-  margin: 0 auto;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.font-normal {
-  font-weight: 400;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.hidden {
-  display: none;
-  visibility: hidden;
-}
-
-.outline {
-  outline: 1px solid black;
-}
-
-/* Base */
-body {
-  font-family: "Lato", sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Fraunces", serif;
 }
 
 ul li {
@@ -181,7 +97,7 @@ a {
   height: 70px;
   background-color: lavender;
   outline: 1px solid black;
-  font-color: black;
+  /* font-color: black; */
 }
 
 .nav a {
@@ -191,42 +107,34 @@ a {
   padding-bottom: 15px;
 }
 
-
 .nav ul li {
- position: relative;
-  
+  position: relative;
 }
 
 .nav ul li a:hover {
-  position:absolute;
+  position: absolute;
   top: 0;
   content: url(https://res.cloudinary.com/deryav09b/image/upload/v1619708873/proyectos/Recurso_8_yhs2zm.svg);
-  }
+}
 
-.nav ul li a::after{
-width: 100%;
+.nav ul li a::after {
+  width: 100%;
   transition: all 0.3s ease-out;
-  position:absolute;
-  
-  }
+  position: absolute;
+}
 
-  .nav ul li a:hover::after{
+.nav ul li a:hover::after {
   height: 50px;
   width: 150px;
   top: 0;
   content: url(https://res.cloudinary.com/deryav09b/image/upload/v1619708873/proyectos/Recurso_8_yhs2zm.svg);
   transition: all 0.3s ease-out;
-  position:absolute;
-  
-  }
+  position: absolute;
+}
 
-  .nav ul li a:hover::beforer{
-  position:absolute;
-  
-  }
-
-
-
+.nav ul li a:hover::beforer {
+  position: absolute;
+}
 
 .nombre {
   position: fixed;
@@ -255,7 +163,7 @@ width: 100%;
   padding-left: 60%;
 }
 
-.grid {
+.proyectos {
   display: grid;
   /* grid-template-columns: 2fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 2fr; */
@@ -270,7 +178,6 @@ width: 100%;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   outline: 1px solid black;
-
 }
 .proyectos div:nth-child(2) {
   width: 401px;
@@ -292,7 +199,6 @@ width: 100%;
   grid-column: 4 / 5;
   grid-row: 1 / 2;
   outline: 1px solid black;
-
 }
 .proyectosdiv:nth-child(5) {
   width: 434px;
@@ -307,10 +213,10 @@ width: 100%;
   grid-column: 2/ 3;
   grid-row: 2/ 4;
   outline: 1px solid black;
-  /padding-top:15px;
-  /padding-left: 15px;
-  /padding-bottom:15px;
-  /padding-right: 15px;
+  /* padding-top:15px;
+  padding-left: 15px;
+  padding-bottom:15px;
+  padding-right: 15px; */
 }
 .proyectos div:nth-child(7) {
   width: 912px;
@@ -318,15 +224,11 @@ width: 100%;
   grid-column: 3 / 4;
   grid-row: 2 / 4;
   outline: 1px solid black;
-  /padding-top:15px;
-  /padding-left: 15px;
-  /padding-bottom:15px;
-  /padding-right: 15px;
+  /* padding-top:15px;
+  padding-left: 15px;
+  padding-bottom:15px;
+  padding-right: 15px; */
 }
-
-
-
-
 
 .box {
   padding: 35px;
@@ -386,9 +288,94 @@ width: 100%;
   color: #333;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color: #06d85f;
 }
 .popup .content {
   max-height: 30%;
   overflow: auto;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) 1fr 7fr;
+  grid-template-rows: 2fr repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.div5 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.div6 {
+  grid-area: 2 / 2 / 4 / 3;
+}
+.div7 {
+  grid-area: 2 / 3 / 3 / 5;
+}
+/* Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-items: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  width: 100vw;
+}
+
+.grid-center {
+  place-content: center;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.outline {
+  outline: 1px solid black;
 }
