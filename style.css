@@ -168,7 +168,6 @@ a {
 }
 
 .nav ul {
-  position: fixed;
   font-family: var(--font-headings);
   font-size: var(--h5);
   display: flex;
@@ -182,6 +181,7 @@ a {
   height: 70px;
   background-color: lavender;
   outline: 1px solid black;
+  font-color: black;
 }
 
 .nav a {
@@ -191,15 +191,42 @@ a {
   padding-bottom: 15px;
 }
 
-.nav ul li a:hover {
-  outline: 1px solid black;
-  height: 200%;
-  width: 200%;
-  border-radius: 200%;
-  opacity: 0.5;
-  background-color: black;
-  font-color: black;
+
+.nav ul li {
+ position: relative;
+  
 }
+
+.nav ul li a:hover {
+  position:absolute;
+  top: 0;
+  content: url(https://res.cloudinary.com/deryav09b/image/upload/v1619708873/proyectos/Recurso_8_yhs2zm.svg);
+  }
+
+.nav ul li a::after{
+width: 100%;
+  transition: all 0.3s ease-out;
+  position:absolute;
+  
+  }
+
+  .nav ul li a:hover::after{
+  height: 50px;
+  width: 150px;
+  top: 0;
+  content: url(https://res.cloudinary.com/deryav09b/image/upload/v1619708873/proyectos/Recurso_8_yhs2zm.svg);
+  transition: all 0.3s ease-out;
+  position:absolute;
+  
+  }
+
+  .nav ul li a:hover::beforer{
+  position:absolute;
+  
+  }
+
+
+
 
 .nombre {
   position: fixed;
@@ -238,7 +265,7 @@ a {
 }
 
 .proyectos div:nth-child(1) {
-  width: 437px;
+  width: 436px;
   height: 569px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -253,15 +280,15 @@ a {
   outline: 1px solid black;
 }
 .proyectos div:nth-child(3) {
-  width: 206px;
+  width: 205px;
   height: 265px;
   grid-column: 3 / 4;
   grid-row: 1 / 2;
   outline: 1px solid black;
 }
 .proyectos div:nth-child(4) {
-  width: 570px;
-  height: 570px;
+  width: 629px;
+  height: 307px;
   grid-column: 4 / 5;
   grid-row: 1 / 2;
   outline: 1px solid black;
@@ -269,7 +296,7 @@ a {
 }
 .proyectosdiv:nth-child(5) {
   width: 434px;
-  height: 465px;
+  height: 150px;
   grid-column: 1 / 2;
   grid-row: 2/ 3;
   outline: 1px solid black;
@@ -297,3 +324,71 @@ a {
   /padding-right: 15px;
 }
 
+
+
+
+
+.box {
+  padding: 35px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #333;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
