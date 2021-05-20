@@ -12,7 +12,7 @@
   --bg: #e6e6fa;
   --font-base: "Lato", sans-serif;
   --font-headings: "Fraunces", serif;
-  --h1: 121px;
+  --h1: 118px;
   --h2: 81px;
   --h3: 54px;
   --h4: 27px;
@@ -83,6 +83,7 @@ a {
   outline: 1px solid black;
 }
 
+
 .nav ul {
   font-family: var(--font-headings);
   font-size: var(--h5);
@@ -132,9 +133,6 @@ a {
   position: absolute;
 }
 
-.nav ul li a:hover::beforer {
-  position: absolute;
-}
 
 .nombre {
   position: fixed;
@@ -146,7 +144,7 @@ a {
   padding-left: 15px;
   width: 70px;
   height: 100vh;
-  margin-top: 70px;
+  margin-top: 0px;
   display: block;
   background-color: lavender;
   outline: 1px solid black;
@@ -156,11 +154,11 @@ a {
   color: #38e925;
   font-family: var(--font-headings);
   font-size: var(--h4);
-  display: block;
-  width: 100vw;
-  height: 100vh;
+
+  display: flex;
   padding-top: 25%;
   padding-left: 60%;
+ 
 }
 
 .proyectos {
@@ -263,13 +261,15 @@ a {
 }
 
 .popup {
-  margin: 70px auto;
+  Margin: 70px;
+  margin-left: 70px;
   padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
   position: relative;
   transition: all 5s ease-in-out;
+  background-color: lavender;
+  width: 80vw;
+  height: 100vh;
+  outline: 1px solid black;
 }
 
 .popup h2 {
@@ -288,7 +288,7 @@ a {
   color: #333;
 }
 .popup .close:hover {
-  color: #06d85f;
+  color: #38e925;
 }
 .popup .content {
   max-height: 30%;
@@ -301,28 +301,36 @@ a {
   grid-template-rows: 2fr repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  margin-left: 70px;
 }
 
 .div1 {
   grid-area: 1 / 1 / 3 / 2;
+  outline: 1px solid black;
 }
 .div2 {
   grid-area: 1 / 2 / 2 / 3;
+  outline: 1px solid black;
 }
 .div3 {
   grid-area: 1 / 3 / 2 / 4;
+  outline: 1px solid black;
 }
 .div4 {
   grid-area: 1 / 4 / 2 / 5;
+  outline: 1px solid black;
 }
 .div5 {
   grid-area: 3 / 1 / 4 / 2;
+  outline: 1px solid black;
 }
 .div6 {
   grid-area: 2 / 2 / 4 / 3;
+  outline: 1px solid black;
 }
 .div7 {
   grid-area: 2 / 3 / 3 / 5;
+  outline: 1px solid black;
 }
 /* Utilities */
 .flex {
