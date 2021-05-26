@@ -11,8 +11,8 @@
   </head>
 
   <body>
-    <nav class="nav relative">
-      <div class="logo absolute">
+    <nav class="nav">
+      <div class="logo">
         <img
           class="logo"
           src="https://res.cloudinary.com/deryav09b/image/upload/v1615479668/Recurso_5_hohlki.jpg"
@@ -26,69 +26,109 @@
     </nav>
     <h1 class="nombre block">MARIA FIGUEROA PLIEGO</h1>
     <div class="intro">
-      <p> ¡HOLA! SOY MARIA,</p><br />
-      <p> ESTE ES MI TRABAJO.</p>
+      <p>¡HOLA! SOY MARIA,</p>
+      <br />
+      <p>ESTE ES MI TRABAJO.</p>
     </div>
-    <!-- <div class="proyectos">
-        <div class="box"> <a class="button" href="#popup1"> <img
-          src="https://res.cloudinary.com/deryav09b/image/upload/v1619705107/proyectos/final-apretado-mariafigueroa_1_casixu.jpg"> </a>
-        </div>
-        <div>
+
+    <section class="grid-proyectos">
+      <div class="proyecto">
         <img
-          src="https://res.cloudinary.com/deryav09b/image/upload/v1619706830/proyectos/imagen_de_cabeza_1_fikggd.jpg"></div>
-        <div>
-         <img
-          src="https://res.cloudinary.com/deryav09b/image/upload/v1619707983/proyectos/libro_2-1_1_hrsef6.jpg"></div>
-        <div>
-           <img
-          src="https://res.cloudinary.com/deryav09b/image/upload/v1620149408/proyectos/hdr_1124_1_ls1z7t.jpg">
-        </div>
-        <div><img
-          src="https://res.cloudinary.com/deryav09b/image/upload/v1619703994/proyectos/revistas_1_qkczkq.jpg">
-          </div>
-        <div>
+          src="https://res.cloudinary.com/deryav09b/image/upload/v1619705107/proyectos/final-apretado-mariafigueroa_1_casixu.jpg"
+        />
+      </div>
+      <div class="proyecto">
         <img
-          src="https://res.cloudinary.com/deryav09b/image/upload/v1618942370/proyectos/mano_cmyk_cambio_uwxyax.jpg">
-          </div>
-        <div>
+          src="https://res.cloudinary.com/deryav09b/image/upload/v1619706830/proyectos/imagen_de_cabeza_1_fikggd.jpg"
+        />
+      </div>
+      <div class="proyecto">
+        <img
+          src="https://res.cloudinary.com/deryav09b/image/upload/v1619707983/proyectos/libro_2-1_1_hrsef6.jpg"
+        />
+      </div>
+      <div class="proyecto">
+        <img
+          src="https://res.cloudinary.com/deryav09b/image/upload/v1620149408/proyectos/hdr_1124_1_ls1z7t.jpg"
+        />
+      </div>
+      <div class="proyecto">
+        <img
+          src="https://res.cloudinary.com/deryav09b/image/upload/v1619703994/proyectos/revistas_1_qkczkq.jpg"
+        />
+      </div>
+      <div class="proyecto">
+        <img
+          src="https://res.cloudinary.com/deryav09b/image/upload/v1618942370/proyectos/mano_cmyk_cambio_uwxyax.jpg"
+        />
+      </div>
+      <div x-data="showInfo()" class="proyecto">
+        <a x-spread="trigger">
           <img
-          src="https://res.cloudinary.com/deryav09b/image/upload/v1618943971/proyectos/scan1-2_cambio_pmdsfz.jpg">
+            src="https://res.cloudinary.com/deryav09b/image/upload/v1618943971/proyectos/scan1-2_cambio_pmdsfz.jpg"
+          />
+        </a>
+        <div class="proyecto-info" x-spread="info">
+          <p>
+            El enredo es un concepto que puede tener diversas acepciones, entre
+            ellas, el desorden, la confusión y el caos. Pensar en la Ciudad de
+            México desde esta perspectiva parece natural. Sobre población, vida
+            rápida, problemas de movilidad son algunas de las características
+            que determinan el día a día en esta urbe. Este proyecto busca
+            representar a través del enredo el movimiento cotidiano de la
+            ciudad, desde el punto de vista masivo, como son los cruces
+            peatonales, estructuras y cables, hasta sus repercusiones en el
+            hogar.
+          </p>
+          <img
+            src="https://res.cloudinary.com/deryav09b/image/upload/v1618943971/proyectos/scan1-2_cambio_pmdsfz.jpg"
+            alt="descripcion"
+          />
         </div>
- </div> -->
+      </div>
+      <!--
 
-    <!-- <div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>Enredo</h2>
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-			Thank to pop me out of that button, but now i'm done so you can close this window.
-		</div>
-	</div>
-</div> -->
+  <div x-spread="info" class="categoria__info">
+    <div>
+      <header>
+        <h2>Marnie</h2>
+        <a @click="show = false" class="close" href="#">←</a>
+      </header>
 
-<div class="parent">
-<div class="div1"> <img src="https://res.cloudinary.com/deryav09b/image/upload/v1619705107/proyectos/final-apretado-mariafigueroa_1_casixu.jpg"> </div>
-<div class="div2"> <img src="https://res.cloudinary.com/deryav09b/image/upload/v1619706830/proyectos/imagen_de_cabeza_1_fikggd.jpg"> </div>
-<div class="div3"> <img src="https://res.cloudinary.com/deryav09b/image/upload/v1619707983/proyectos/libro_2-1_1_hrsef6.jpg"> </div>
-<div class="div4"> <img src="https://res.cloudinary.com/deryav09b/image/upload/v1620149408/proyectos/hdr_1124_1_ls1z7t.jpg"> </div>
-<div class="div5"> <img src="https://res.cloudinary.com/deryav09b/image/upload/v1619703994/proyectos/revistas_1_qkczkq.jpg"> </div>
-<div class="div6"> <img src="https://res.cloudinary.com/deryav09b/image/upload/v1618942370/proyectos/mano_cmyk_cambio_uwxyax.jpg"> </div>
-<div class="div7"> <img src="https://res.cloudinary.com/deryav09b/image/upload/v1618943971/proyectos/scan1-2_cambio_pmdsfz.jpg"> </div>
-</div>
+    </div>
+  </div>
 
-<div class="box">
-	<a class="button" href="#popup1">Imagen</a>
-</div>
 
-<div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>Enredo</h2>
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-			enredo es un proyecto...
-		</div>
-	</div>
-</div>
+-->
+    </section>
+    <!-- <div class="proyecto">
+       <div class="box">
+      <a class="button" href="#popup1">
+  <img
+          src="https://res.cloudinary.com/deryav09b/image/upload/v1618943971/proyectos/scan1-2_cambio_pmdsfz.jpg"
+        /></a>
+         <div id="popup1" class="overlay">
+      <div class="popup">
+       <div class="enredogrid"> <h1>Enredo</h1>
+        <a class="close" href="#">&times</a>
+        <div class="content">El enredo es un concepto que puede tener
+diversas acepciones, entre ellas, el desorden,
+la confusión y el caos. Pensar en la Ciudad
+de México desde esta perspectiva parece
+natural. Sobre población, vida rápida,
+problemas de movilidad son algunas de las características que determinan el día a día
+en esta urbe.
 
+Este proyecto busca representar a través
+del enredo el movimiento cotidiano de la ciudad,
+desde el punto de vista masivo, como son
+los cruces peatonales, estructuras y cables,
+hasta sus repercusiones en el hogar.</div>
+
+<div class="imagen1"><img src="https://res.cloudinary.com/deryav09b/image/upload/v1618943971/proyectos/scan1-2_cambio_pmdsfz.jpg"/>
+      </div></div>
+    </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
