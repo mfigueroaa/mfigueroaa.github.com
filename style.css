@@ -67,11 +67,12 @@ a {
 }
 
 /* Componentes */
+
 .nav {
   position: sticky;
   top: -1px;
   background-color: #e6e6fa;
-  max-width: 100vw;
+  width: 100vw;
   outline: 1px solid black;
   z-index: 100;
 }
@@ -106,32 +107,36 @@ a {
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 15px;
+  transition: all 0.3s ease-out;
+  z-index: -10000000000;
 }
 
 .nav ul li {
   position: relative;
+  z-index: 10000000000;
 }
 
 .nav ul li a:hover {
-  position: absolute;
-  top: 0;
-  content: url(https://res.cloudinary.com/deryav09b/image/upload/v1619708873/proyectos/Recurso_8_yhs2zm.svg);
+  /* top: 0; */
+
+  /* content: url(https://res.cloudinary.com/deryav09b/image/upload/v1619708873/proyectos/Recurso_8_yhs2zm.svg); */
+  content: url(./svg.svg);
 }
 
-.nav ul li a::after {
+/* .nav ul li a::after {
   width: 100%;
-  transition: all 0.3s ease-out;
-  position: absolute;
-}
 
-.nav ul li a:hover::after {
-  height: 50px;
-  width: 150px;
+  position: absolute;
+} */
+
+/* .nav ul li a:hover::after {
+  height: 250px;
+  width: 180px;
   top: 0;
   content: url(https://res.cloudinary.com/deryav09b/image/upload/v1619708873/proyectos/Recurso_8_yhs2zm.svg);
   transition: all 0.3s ease-out;
-  position: absolute;
-}
+
+} */
 
 .nombre {
   position: fixed;
@@ -150,83 +155,52 @@ a {
 }
 
 .intro {
-  background-color: #e6e6fa;
-  color: #38e925;
+  background-color: #e4e4f7;
+  color: #000000;
   font-family: var(--font-headings);
   font-size: var(--h4);
 
-  display: flex;
-  padding-top: 28%;
-  padding-bottom: 28%;
-  padding-left: 60%;
+  display: absolute;
+  padding-bottom: 10%;
+  padding-left: 30%;
+  padding-top: 5%;
 }
 
-.button {
-  font-size: 1em;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.button:hover {
-  background: #333;
+/*.intro figure{
+background-color: #0000e6;
+transition: all 400ms ease-out;*/
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
+
+
+.intro gif{
+  position: block;
+  padding-left: 80%;
 }
 
-.popup {
-  margin: 70px;
-  margin-left: 70px;
-  padding: 20px;
+/*.intro figure img:hover{
   position: relative;
-  transition: all 5s ease-in-out;
-  background-color: lavender;
-  width: 95vw;
-  height: 100vh;
-  outline: 1px solid black;
+  border: 2px solid;*/
 }
 
-.popup h1 {
-  color: #333;
-  margin-left: 20px;
-  margin-top: 20px;
+.intro figcaption{
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    font-size: 32px;
+    color: white;*/
 }
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #ffffff;
-}
-.popup .close:hover {
-  color: #38e925;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-.enredogrid {
-  display: grid;
-  grid-template-columns: 2;
-  grid-template-rows: 2;
-  position: relative;
-}
+
+
+
+
 .popup .imagen1 {
   margin-top: 20px;
   margin-right: 20px;
@@ -234,7 +208,7 @@ a {
   grid-row: 1;
   outline: 1px solid black;
 }
-
+/*
 *,
 *::before,
 *::after {
@@ -290,7 +264,7 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
+} */
 
 /* Aqui empieza el grid */
 .grid-proyectos {
@@ -345,25 +319,34 @@ select {
 
 .proyecto-info {
   position: absolute;
-  top: 0;
   right: 0;
+  top: 0;
   left: 0;
   bottom: 0;
-  width: 80%;
-  height: auto;
-  background-color: rgba(119, 126, 124, 0.068);
-  margin: 20px auto;
+  width: 100%;
+  height: 100%;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+ 
 }
 
+
+
 .proyecto-info p {
-  font-size: 10px;
+  font-size: 15px;
+  font-family: var(--font-base);
+  padding-bottom: 10px; 
+  padding:30px
 }
 .proyecto-info img {
   margin: auto;
+  outline: 1px solid black;
+ 
+
 }
 
 /* Utilities */
-.flex {
+/* .flex {
   display: flex;
 }
 
@@ -416,4 +399,4 @@ select {
 
 .outline {
   outline: 1px solid black;
-}
+} */
