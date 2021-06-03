@@ -18,13 +18,14 @@
         />
       </div>
       <ul role="list">
-        <li><a href="#"> about </a></li>
-        <li><a href="#"> proyectos </a></li>
-        <li><a href="#"> contacto </a></li>
+        <li><a href="#about" style="color:black"> about </a></li>
+        <li><a href="#proyectos" style="color:black"> proyectos </a></li>
+        <li><a href="#contacto" style="color:black"> contacto </a></li>
       </ul>
+      <h1 class="nombre">MARIA FIGUEROA PLIEGO</h1>
     </nav>
-    <h1 class="nombre">MARIA FIGUEROA PLIEGO</h1>
-    <div class="intro">
+    
+    <section class="intro" id="about">
      <figcaption class="gif-texto">
       <p>¡HOLA! SOY MARIA,</p>
       <p>ESTE ES MI TRABAJO.</p>
@@ -32,9 +33,9 @@
      <img  class="gif" src="https://res.cloudinary.com/deryav09b/image/upload/v1622570136/gif_web_2_z7doco.gif" />
       </figcaption>
       </figure>
-    </div>
+    </section>
 
-    <section class="grid-proyectos">
+    <section class="grid-proyectos" id="proyectos">
        <div x-data="showInfo()" class="proyecto">
        <a x-spread="trigger">
         <img
@@ -337,48 +338,14 @@ de diferentes encuadres y percepciones de lo habitual.
         <img
           src="https://res.cloudinary.com/deryav09b/image/upload/v1622677200/proyectos/Recurso_15_300x-8_yftuuo.png"/>
          </div>
-      <!--
-
-  <div x-spread="info" class="categoria__info">
-    <div>
-      <header>
-        <h2>Marnie</h2>
-        <a @click="show = false" class="close" href="#">←</a>
-      </header>
-
-    </div>
-  </div>
-
-
--->
-    </section>
-    <!-- <div class="proyecto">
-       <div class="box">
-      <a class="button" href="#popup1">
-  <img
-          src="https://res.cloudinary.com/deryav09b/image/upload/v1618943971/proyectos/scan1-2_cambio_pmdsfz.jpg"
-        /></a>
-         <div id="popup1" class="overlay">
-      <div class="popup">
-       <div class="enredogrid"> <h1>Enredo</h1>
-        <a class="close" href="#">&times</a>
-        <div class="content">El enredo es un concepto que puede tener
-diversas acepciones, entre ellas, el desorden,
-la confusión y el caos. Pensar en la Ciudad
-de México desde esta perspectiva parece
-natural. Sobre población, vida rápida,
-problemas de movilidad son algunas de las características que determinan el día a día
-en esta urbe.
-
-Este proyecto busca representar a través
-del enredo el movimiento cotidiano de la ciudad,
-desde el punto de vista masivo, como son
-los cruces peatonales, estructuras y cables,
-hasta sus repercusiones en el hogar.</div>
-
-<div class="imagen1"><img src="https://res.cloudinary.com/deryav09b/image/upload/v1618943971/proyectos/scan1-2_cambio_pmdsfz.jpg"/>
-      </div></div>
-    </div> -->
+      </div>
+ </section>
+ 
+  <section class="contacto" id="contacto">
+  <a href="mailto:airamfp@live.com.mx" style="color:black"> ¡Contáctame!</a>
+  
+         
+</section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
     <script src="./scripts.js"></script>
   </body>
