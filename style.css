@@ -383,6 +383,7 @@ select {
 }
 .proyecto:nth-child(8) {
   grid-column: 1;
+   width: 353px;
   outline: 1px solid black;
   cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679022/proyectos/Capa_2_a23z1s.svg), progress;
 
@@ -401,6 +402,7 @@ select {
 .proyecto:nth-child(11) {
   grid-column: 1;
   grid-row: 5 / span 2;
+   width: 353px;
   outline: 1px solid black;
 }
 .proyecto:nth-child(12) {
@@ -430,7 +432,6 @@ outline: 1px solid black;
 cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyectos/Recurso_20_1_zsliqr.svg), progress;
 
 }
-
 
 
 
@@ -483,6 +484,273 @@ cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyec
  
 }
 
+.proyecto-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 708px;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyectos/Recurso_20_1_zsliqr.svg), progress;
+
+}
+
+
+/*mano*/
+.proyecto-info2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 708px;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyectos/Recurso_20_1_zsliqr.svg), progress;
+
+}
+
+
+.proyecto-info2 H1{
+ margin: 50px;
+}
+
+.proyecto-info2 p {
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  margin-right: 700px;
+  padding-left: 50px;
+  font-size: -h6;
+}
+
+.proyecto-inabajo2 ul{
+  outline: 1px solid black;
+  padding: 10px;
+  margin-top:464px; 
+  padding-left: 50px;
+  width: 963.2px;
+
+}
+
+.proyecto-inabajo2 li{
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding-right: 184px;
+}
+
+.proyecto-info2 img {
+  margin: auto;
+  outline: 1px solid black;
+  width: 445px;
+ }
+
+
+.imagenes-proyecto2 {
+   outline: 1px solid black;
+   padding: 20px;
+  margin-left: 800px;
+   height: 708px;
+   margin-top: -724px;
+   float:right;
+   overflow:auto;
+ 
+}
+
+/*poster*/
+.proyecto-info3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 708px;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyectos/Recurso_20_1_zsliqr.svg), progress;
+
+}
+
+
+.proyecto-info3 H1{
+ margin: 50px;
+}
+
+.proyecto-info3 p {
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  margin-right: 700px;
+  padding-left: 50px;
+  font-size: -h6;
+}
+
+.proyecto-inabajo3 ul{
+  outline: 1px solid black;
+  padding: 10px;
+  margin-top:464px; 
+  padding-left: 50px;
+  width: 862px;
+
+}
+
+.proyecto-inabajo3 li{
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding-right: 152px;
+}
+
+.proyecto-info3 img {
+  margin: auto;
+  outline: 1px solid black;
+  width: 530px;
+ }
+
+
+.imagenes-proyecto3 {
+   outline: 1px solid black;
+   padding: 20px;
+  margin-left: 800px;
+   height: 708px;
+   margin-top: -724px;
+   float:right;
+   overflow:auto;
+  cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679022/proyectos/Capa_2_a23z1s.svg), progress;
+}
+
+/*espacios*/
+.proyecto-info4 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 708px;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+
+}
+
+
+.proyecto-info4 H1{
+ margin: 50px;
+}
+
+.proyecto-info4 p {
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  margin-right: 700px;
+  padding-left: 50px;
+  font-size: -h6;
+}
+
+.proyecto-inabajo4 ul{
+  outline: 1px solid black;
+  padding: 10px;
+  margin-top:436px; 
+  padding-left: 50px;
+  width: 862px;
+
+}
+
+.proyecto-inabajo4 li{
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding-right: 152px;
+}
+
+.proyecto-info4 img {
+  margin: auto;
+  outline: 1px solid black;
+  width: 530px;
+ }
+
+
+.imagenes-proyecto4 {
+   outline: 1px solid black;
+   padding: 20px;
+  margin-left: 800px;
+   height: 708px;
+   margin-top: -724px;
+   float:right;
+   overflow:auto;
+}
+
+/*jaula*/
+.proyecto-info5 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 708px;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+
+}
+
+
+.proyecto-info5 H1{
+ margin: 50px;
+}
+
+.proyecto-info5 p {
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  margin-right: 700px;
+  padding-left: 50px;
+  font-size: -h6;
+}
+
+.proyecto-inabajo5 ul{
+  outline: 1px solid black;
+  padding: 10px;
+  margin-top:380px; 
+  padding-left: 50px;
+  width: 862px;
+
+}
+
+.proyecto-inabajo5 li{
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding-right: 148px;
+}
+
+.proyecto-info5 img {
+  margin: auto;
+  outline: 1px solid black;
+  width: 530px;
+ }
+
+
+.imagenes-proyecto5 {
+   outline: 1px solid black;
+   padding: 20px;
+  margin-left: 800px;
+   height: 708px;
+   margin-top: -724px;
+   float:right;
+   overflow:auto;
+}
+
 /* Responsivo */
 @media screen and (max-width: 600px) {
 .grid-proyectos {
@@ -496,6 +764,69 @@ cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyec
     margin: auto;
   }
 
+}
+
+/*ORDINARIO*/
+.proyecto-info6 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 708px;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+
+}
+
+
+.proyecto-info6 H1{
+ margin: 50px;
+}
+
+.proyecto-info6 p {
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  margin-right: 700px;
+  padding-left: 50px;
+  font-size: -h6;
+}
+
+.proyecto-inabajo6 ul{
+  outline: 1px solid black;
+  padding: 10px;
+  margin-top:324px; 
+  padding-left: 50px;
+  width: 939px;
+
+}
+
+.proyecto-inabajo6 li{
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding-right: 176px;
+}
+
+.proyecto-info6 img {
+  margin: auto;
+  outline: 1px solid black;
+  width: 453px;
+ }
+
+
+.imagenes-proyecto6 {
+   outline: 1px solid black;
+   padding: 20px;
+  margin-left: 800px;
+   height: 708px;
+   margin-top: -724px;
+   float:right;
+   overflow:auto;
+   cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679022/proyectos/Capa_2_a23z1s.svg), progress;
 }
 
 
