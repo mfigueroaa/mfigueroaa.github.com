@@ -430,7 +430,8 @@ select {
   background-color: #e4e4f7;
 outline: 1px solid black;
 cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyectos/Recurso_20_1_zsliqr.svg), progress;
-
+transition: opacity 0.5s ease-out;
+transition: opacity 0.5s ease-in;
 }
 
 
@@ -563,6 +564,65 @@ cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyec
  
 }
 
+/* Responsivo  mano*/
+@media screen and (max-width: 600px) {
+.proyecto-info2 {
+  width: auto;
+  height: fit-content;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyectos/Recurso_20_1_zsliqr.svg), progress;
+
+}
+
+
+.proyecto-info2 H1{
+ margin: 50px;
+}
+
+.proyecto-info2 p {
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  margin-right: 10px;
+  padding-left: px;
+  font-size: -h6;
+}
+
+.proyecto-inabajo2 ul{
+  outline: 1px solid black;
+  padding: 10px;
+  margin-top:124px; 
+  padding-left: 23px;
+  width: auto;
+
+}
+
+.proyecto-inabajo2 li{
+  font-size: 15px;
+  font-family: var(--font-base);
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding-right: .1px;
+}
+
+.proyecto-info2 img {
+  outline: 1px solid black;
+  width: auto;
+ }
+
+
+.imagenes-proyecto2 {
+   outline: 1px solid black;
+   padding: 20px;
+   height: auto;
+   margin: 0px;
+   margin-top: -15px;
+  cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679022/proyectos/Capa_2_a23z1s.svg), progress;
+}
+
+}
+
 /*poster*/
 .proyecto-info3 {
   position: absolute;
@@ -627,6 +687,65 @@ cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyec
   cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679022/proyectos/Capa_2_a23z1s.svg), progress;
 }
 
+/* Responsivo  poster*/
+@media screen and (max-width: 600px) {
+.proyecto-info3 {
+  width: auto;
+  height: fit-content;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyectos/Recurso_20_1_zsliqr.svg), progress;
+
+}
+
+
+.proyecto-info3 H1{
+ margin: 50px;
+}
+
+.proyecto-info3 p {
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  margin-right: 10px;
+  padding-left: px;
+  font-size: -h6;
+}
+
+.proyecto-inabajo3 ul{
+  outline: 1px solid black;
+  padding: 10px;
+  margin-top:124px; 
+  padding-left: 23px;
+  width: auto;
+
+}
+
+.proyecto-inabajo3 li{
+  font-size: 15px;
+  font-family: var(--font-base);
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding-right: .1px;
+}
+
+.proyecto-info3 img {
+  outline: 1px solid black;
+  width: auto;
+ }
+
+
+.imagenes-proyecto3 {
+   outline: 1px solid black;
+   padding: 20px;
+   height: auto;
+   margin: 0px;
+   margin-top: -15px;
+  cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679022/proyectos/Capa_2_a23z1s.svg), progress;
+}
+
+}
+
 /*espacios*/
 .proyecto-info4 {
   position: absolute;
@@ -687,6 +806,65 @@ outline: 1px solid black;
    margin-top: -724px;
    float:right;
    overflow:auto;
+}
+
+/* Responsivo  espacios*/
+@media screen and (max-width: 600px) {
+.proyecto-info4 {
+  width: auto;
+  height: fit-content;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyectos/Recurso_20_1_zsliqr.svg), progress;
+
+}
+
+
+.proyecto-info4 H1{
+ margin: 50px;
+}
+
+.proyecto-info4 p {
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  margin-right: 10px;
+  padding-left: px;
+  font-size: -h6;
+}
+
+.proyecto-inabajo4 ul{
+  outline: 1px solid black;
+  padding: 10px;
+  margin-top:124px; 
+  padding-left: 23px;
+  width: auto;
+
+}
+
+.proyecto-inabajo4 li{
+  font-size: 15px;
+  font-family: var(--font-base);
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding-right: .1px;
+}
+
+.proyecto-info4 img {
+  outline: 1px solid black;
+  width: auto;
+ }
+
+
+.imagenes-proyecto4 {
+   outline: 1px solid black;
+   padding: 20px;
+   height: auto;
+   margin: 0px;
+   margin-top: -15px;
+  cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679022/proyectos/Capa_2_a23z1s.svg), progress;
+}
+
 }
 
 /*jaula*/
@@ -765,7 +943,64 @@ outline: 1px solid black;
   }
 
 }
+/* Responsivo  jaula*/
+@media screen and (max-width: 600px) {
+.proyecto-info5 {
+  width: auto;
+  height: fit-content;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyectos/Recurso_20_1_zsliqr.svg), progress;
 
+}
+
+
+.proyecto-info5 H1{
+ margin: 50px;
+}
+
+.proyecto-info5 p {
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  margin-right: 10px;
+  padding-left: px;
+  font-size: -h6;
+}
+
+.proyecto-inabajo5 ul{
+  outline: 1px solid black;
+  padding: 10px;
+  margin-top:124px; 
+  padding-left: 23px;
+  width: auto;
+
+}
+
+.proyecto-inabajo5 li{
+  font-size: 15px;
+  font-family: var(--font-base);
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding-right: .1px;
+}
+
+.proyecto-info5 img {
+  outline: 1px solid black;
+  width: auto;
+ }
+
+
+.imagenes-proyecto5 {
+   outline: 1px solid black;
+   padding: 20px;
+   height: auto;
+   margin: 0px;
+   margin-top: -15px;
+  cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679022/proyectos/Capa_2_a23z1s.svg), progress;
+}
+
+}
 /*ORDINARIO*/
 .proyecto-info6 {
   position: absolute;
@@ -829,6 +1064,74 @@ outline: 1px solid black;
    cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679022/proyectos/Capa_2_a23z1s.svg), progress;
 }
 
+/* Responsivo  mano*/
+@media screen and (max-width: 600px) {
+.proyecto-info6 {
+  width: auto;
+  height: fit-content;
+  background-color: #e4e4f7;
+outline: 1px solid black;
+cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679023/proyectos/Recurso_20_1_zsliqr.svg), progress;
+
+}
+
+
+.proyecto-info6 H1{
+ margin: 50px;
+}
+
+.proyecto-info6 p {
+  font-size: var(--h6);
+  font-family: var(--font-base);
+  margin-right: 10px;
+  padding-left: px;
+  font-size: -h6;
+}
+
+.proyecto-inabajo6 ul{
+  outline: 1px solid black;
+  padding: 10px;
+  margin-top:124px; 
+  padding-left: 23px;
+  width: auto;
+
+}
+
+.proyecto-inabajo6 li{
+  font-size: 15px;
+  font-family: var(--font-base);
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  padding-right: .1px;
+}
+
+.proyecto-info6 img {
+  outline: 1px solid black;
+  width: auto;
+ }
+
+
+.imagenes-proyecto6 {
+   outline: 1px solid black;
+   padding: 20px;
+   height: auto;
+   margin: 0px;
+   margin-top: -15px;
+  cursor: url(https://res.cloudinary.com/deryav09b/image/upload/v1622679022/proyectos/Capa_2_a23z1s.svg), progress;
+}
+
+}
+
+.contacto{
+   font-size: var(--h6);
+  font-family: var(--font-base);
+  outline: 1px solid black;
+  width: 100%;
+  height: 308px;
+  padding: 130px;
+  background-color: #e4e4f7;
+}
 
 /* Utilities */
 /* .flex {
